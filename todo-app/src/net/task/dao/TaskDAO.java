@@ -40,12 +40,7 @@ public class TaskDAO {
 				PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_TASKS);){
 						
 			//execute query
-			System.out.println("test");
-				System.out.println("test string");
-				System.out.println("test sting");
-			//ResultSet rs = preparedStatement.executeQuery();
 			ResultSet rs = preparedStatement.executeQuery();
-
 			//Process the ResultSet object
 			while(rs.next()){
 				int id = rs.getInt("id");
